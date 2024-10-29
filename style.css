@@ -1,7 +1,127 @@
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+.playwrite-gb-s{
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 *{
     border-radius: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, .worktxt p, .litxt p, h4{
+    font-family: "Playwrite GB S", cursive;
 }
 
 body,html{
@@ -12,10 +132,9 @@ div.geral{
     max-width: 900px;
     margin: auto;
     background-color: rgb(255, 245, 226);
-    height:100%;
+    height:100% + 20px;
     justify-content: center;
     margin: auto;
-    padding-bottom: 30px;
 }
 
 header{
@@ -23,7 +142,7 @@ header{
     position: relative;
 }
 header .rosto{
-    border: solid black 3px;
+    border: solid black 0.1px;
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -31,12 +150,33 @@ header .rosto{
 
 }
 
+.rosto{
+    background-image: url(WhatsApp\ Image\ 2024-10-27\ at\ 14.00.23.jpeg);
+    background-position: center center;
+    background-size: cover;
+}
+
 header>.rosto > h4 {
     position: absolute;
     top: 200px;
-    transform: translateX(250%);
+    transform: translateX(220%);
+    font-weight: bolder;
+    font-size: 1em;
+    color: black;
+    text-shadow: 0 0 5px white;
+    z-index: 1;
+}
+
+header>.rosto > hr {
+    position: absolute;
+    top: 217px;
+    transform: translateX(260%);
     font-weight: bolder;
     color: black;
+    border: solid rgb(206, 0, 0) 3px;
+    width: 60px;
+    z-index: 0;
+    border-radius: 50px;
 }
 
 .info{
@@ -51,6 +191,7 @@ header>.rosto > h4 {
     font-size: 50px;
     margin: 10px;
 }
+
 
 .vermelho{
     color: rgb(206, 0, 0);
@@ -241,6 +382,9 @@ main .contatos{
     color: yellow;
 }
 
+#green{
+    color: green;
+}
 .divh{
     display: flex;
     flex-direction: column;
@@ -266,7 +410,9 @@ main .contatos{
 }
 
 
-
+.divh > span{
+    text-align: center;
+}
 
 
 .worktxt > .linha > hr{
@@ -302,6 +448,7 @@ main .contatos{
 .litabela{
     display: flex;
     flex-direction: row;
+    margin-top: 12px;
 }
 
 .libarra hr{
@@ -315,21 +462,25 @@ main .contatos{
 .lip #barra1a > hr {
     background-color: orange;
     border: orange 0.1px solid;
+    width: 370px;
 }
 
 
 .lip #barra2a > hr{
     border: orange 0.1px solid;
+    width: 30px;
 }
 
 .lip #barra3a > hr {
     background-color: green;
     border: green 0.1px solid;
+    width: 300px;
 }
 
 
 .lip #barra4a > hr{
     border: green 0.1px solid;
+    width: 100px;
 }
 
 .libarra{
@@ -350,7 +501,7 @@ main .contatos{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 40px 50px;
+    padding: 40px 50px;
 }
 
 .icones{
@@ -386,6 +537,10 @@ main .contatos{
 #cozinhar {
     object-fit: cover;
     vertical-align: center; /* ou contain, dependendo da necessidade */
+}
+
+.icon p{
+    font-weight: bolder;
 }
 
 @media (max-width: 900px) {
@@ -451,7 +606,9 @@ main .contatos{
     }
 
     .Interesses{
-        margin: 20px 50px;
+        margin: 0px 50px;
+        padding: 20px 50px;
+        padding-top: 0px;
     }
 }
 
